@@ -16,6 +16,7 @@ Artificial patient data is created by sampling feature values (with replacement)
 * Stroke team
 * Infarction (Y/N)
 * Age (5 year age bands)
+* Disability (prior to stroke (modified Rankin Scale, mRS)
 * Onset-to-arrival time (minutes)
 * Arrival-to-scan time (minutes)
 * Scan-to-thrombolysis time (if appropriate)
@@ -28,4 +29,6 @@ Artificial patient data is created by sampling feature values (with replacement)
 
 Stroke teams have been anonymised, and all stroke teams have 500 artificial patients generated.
 
-These patient data were passed to models to predict probabilities of those patients receiving thrombolysis, and then passed to a model to predict outcome disability. Use of thrombolysis and outcomes were sampled from distributions based on probabilities, and these outputs added to the artificial patients. 
+Patient data was passed to models to predict probabilities of patients receiving thrombolysis, and then passed to a model to predict disability (mRS) on discharge from inpatient care. Use of thrombolysis and outcomes were sampled from distributions based on probabilities, and these outputs added to the artificial patients.
+
+More information on generation of artificial patient data may be found [here](https://github.com/samuel-book/samuel_2_production/blob/main/5_artificial_data.ipynb).
