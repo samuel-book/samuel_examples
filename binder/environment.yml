@@ -1,0 +1,15 @@
+name: sam
+channels:
+  - defaults
+dependencies:
+  - jupyter
+  - jupyterlab
+  - matplotlib
+  - numpy
+  - pip
+  - pandas
+  - python=3.10
+  - scikit-learn
+  - pip:
+    - shap
+    - xgboost
