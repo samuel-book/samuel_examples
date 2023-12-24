@@ -4,6 +4,8 @@ Replication of Stroke Audit Machine Learning with artificial patient data.
 
 The data and code for this notebook may be found at: https://github.com/samuel-book/samuel_examples
 
+A Jupyter Book of the code repository may be found at: https://samuel-book.github.io/samuel_examples
+
 ## Run on Binder
 
 You may run the notebooks on Binder. If it hasn't been used for a while it make take about 5 mins to initialise.
