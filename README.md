@@ -11,18 +11,18 @@ Both sets of models are for patients arriving within 4 hours of known stroke ons
 
 ## Artificial patient data
 
-Artificial patient data is created by sampling feature values (with replacement) independently from patients attending 119 different stroke teams. Sampling is performed for each stroke team. These data do not maintain covariances in the original data (except that stroke severity are sampled separately for ischaemic and non-ischaemic stroke patients). These artificial patients are intended to demonstrate our machine learning models, and are not suitable for any clinical research into stroke. Each artificial patient is a 'Frankenstein patient' composite of 12 real patients, with features:
+Artificial patient data is created by sampling feature values (with replacement, and rounding) independently from patients attending 119 different stroke teams. Sampling is performed for each stroke team. These data do not maintain covariances in the original data (except that stroke severity is sampled separately for ischaemic and non-ischaemic stroke patients). These artificial patients are intended to demonstrate our machine learning models, and are not suitable for any clinical research into stroke. Each artificial patient is a 'Frankenstein patient' composite of 12 real patients, with features:
 
 * Stroke team
 * Infarction (Y/N)
 * Age (5 year age bands) - with ages censored below 35 or above 95
-* Disability (prior to stroke (modified Rankin Scale, mRS)
+* Disability prior to stroke (modified Rankin Scale, mRS)
 * Onset-to-arrival time (minutes, rounded to closest 5 mins)
 * Arrival-to-scan time (minutes, rounded to closest 5 mins)
 * Scan-to-thrombolysis time (minutes, if appropriate, rounded to closest 5 mins)
 * Onset-to-thrombolysis time (calculated, if appropriate)
 * Onset time known precisely (Y/N)
-* Onset during sleep (all have imprecise onset times)
+* Onset during sleep (all are then labelled as having imprecise onset times)
 * Stroke Severity (NIHSS)
     Stroke severity is sampled separately for ischaemic and non-ischaemic strokes
 * Atrial fibrillation coagulant (all with a diagnosis of atrial fibrillation)
