@@ -2,7 +2,19 @@
 
 Replication of Stroke Audit Machine Learning with artificial patient data.
 
-These examples replicate key work from the SAMueL project. They cover two areas:
+The data and code for this notebook may be found at: https://github.com/samuel-book/samuel_examples
+
+A Jupyter Book of the code repository may be found at: https://samuel-book.github.io/samuel_examples
+
+## Run on Binder
+
+You may run the notebooks on Binder. If it hasn't been used for a while it make take about 5 mins to initialise.
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/samuel-book/samuel_examples/main)
+
+## What is here?
+
+These examples replicate key work from the SAMueL (Stroke Audit Machine Learning) project. They cover two areas:
 
 1) Choice of use of thrombolysis at each stroke team.
 2) Predicted outcomes for patients with and without thrombolysis
@@ -29,6 +41,6 @@ Artificial patient data is created by sampling feature values (with replacement,
 
 Stroke teams have been anonymised, and all stroke teams have 500 artificial patients generated.
 
-Patient data was passed to models to predict probabilities of patients receiving thrombolysis, and then passed to a model to predict disability (mRS) on discharge from inpatient care. Use of thrombolysis and outcomes were sampled from distributions based on probabilities, and these outputs added to the artificial patients.
+Patient data was passed to models to predict probabilities of patients receiving thrombolysis, and then passed to a model to predict disability (mRS) on discharge from inpatient care. Use of thrombolysis and outcomes were sampled from distributions based on probabilities, and these outputs added to the artificial patients. While the artificial data does not maintain covariance of features, the labelling with use of thrombolysis and outcome will maintain interactions between features.
 
 More information on generation of artificial patient data may be found [here](https://github.com/samuel-book/samuel_2_production/blob/main/5_artificial_data.ipynb).
