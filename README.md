@@ -23,9 +23,9 @@ Both sets of models are for patients arriving within 4 hours of known stroke ons
 
 ## Artificial patient data
 
-Artificial patient data is created by sampling feature values (with replacement, and rounding) independently from patients attending 119 different stroke teams. Sampling is performed for each stroke team. These data do not maintain covariances in the original data (except that stroke severity is sampled separately for ischaemic and non-ischaemic stroke patients). These artificial patients are intended to demonstrate our machine learning models, and are not suitable for any clinical research into stroke. Each artificial patient is a 'Frankenstein patient' composite of 12 real patients, with features:
+Artificial patient data is created by sampling feature values (with replacement, and rounding) independently from patients attending 119 different stroke teams. Sampling is performed for each stroke team. These data do not maintain covariances in the original data (except that stroke severity is sampled separately for ischaemic and non-ischaemic stroke patients). These artificial patients are intended to demonstrate our machine learning models, and are not suitable for any clinical research into stroke. Each artificial patient has the following features.
 
-* Stroke team
+* Stroke team (anonymised)
 * Infarction (Y/N)
 * Age (5 year age bands) - with ages censored below 35 or above 95
 * Disability prior to stroke (modified Rankin Scale, mRS)
@@ -37,7 +37,7 @@ Artificial patient data is created by sampling feature values (with replacement,
 * Onset during sleep (all are then labelled as having imprecise onset times)
 * Stroke Severity (NIHSS)
     Stroke severity is sampled separately for ischaemic and non-ischaemic strokes
-* Atrial fibrillation coagulant (all with a diagnosis of atrial fibrillation)
+* Atrial fibrillation coagulant (all also given a diagnosis of atrial fibrillation)
 
 Stroke teams have been anonymised, and all stroke teams have 500 artificial patients generated.
 
