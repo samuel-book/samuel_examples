@@ -1,0 +1,10 @@
+format: jb-book
+root: README
+parts:
+- caption: Predicting use of thrombolysis
+  chapters:
+  - file: 10_thrombolysis_choice_accuracy
+
+  
+
+
